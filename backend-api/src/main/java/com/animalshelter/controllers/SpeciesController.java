@@ -2,9 +2,7 @@ package com.animalshelter.controllers;
 
 import com.animalshelter.entities.Species;
 import com.animalshelter.storages.SpeciesStorage;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
@@ -22,5 +20,10 @@ public class SpeciesController {
 
     @GetMapping("/api/species/{id}/")
     public Species retrieveSpeciesById(@PathVariable long id) { return speciesStorage.retrieveSpeciesById(id); }
-    
+
+    @PostMapping("/api/species/add/")
+    public Collection<Species> addSpecies(@RequestBody Species species) {
+        speciesStorage.save(species);
+        return speciesStorage.retrieveAllSpecies();
+    }
 }
