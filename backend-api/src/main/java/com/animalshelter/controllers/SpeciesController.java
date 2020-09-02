@@ -26,4 +26,10 @@ public class SpeciesController {
         speciesStorage.save(species);
         return speciesStorage.retrieveAllSpecies();
     }
+
+    @DeleteMapping("/api/species/{speciesId}/delete/")
+    public Collection<Species> deleteSpecies(@PathVariable long speciesId) {
+        speciesStorage.delete(speciesId);
+        return speciesStorage.retrieveAllSpecies();
+    }
 }
