@@ -1,4 +1,4 @@
-package entities;
+package com.animalshelter.entities;
 
 import org.junit.jupiter.api.Test;
 
