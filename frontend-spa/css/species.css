@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 
 nav {
     width: 100%;
     height: 15vh;
     display: flex;
+    margin-top: -10px;
     flex-direction: row;
     overflow: hidden;
+    background-color: white; 
+    position: fixed;
+    z-index: 1;
 }
 
 nav .menu {
@@ -44,16 +49,71 @@ nav .logo img {
     margin-left: 75px;
 }
 
-header .video .color-block{
-    height: 300px;
-    width: 1000px;
-    background-color: #733173;
-    position: fixed;
-    margin-top: 120px;
-    transform: translateX(20%);
+main {
+    scroll-behavior: smooth;
 }
 
-header .video iframe {
-    margin-top: 40px;
-    transform: translateX(100%);
+main  .video .color-block{
+    height: 300px;
+    width: 70%;
+    background-color: #733173;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 15%;
+    z-index: -1;
+}
+
+main .video iframe {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    display:block;
+    margin: 0 auto;
+    
+}
+
+main .welcome h3 {
+    width: 70%;
+    margin-left: 15%;
+    color: #733173;
+    font-family: 'Finger Paint', cursive;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+main .welcome p {
+    width: 70%;
+    margin-left: 15%;
+    padding: 20px 0 20px 0;
+    color: #733173;
+    font-family: 'Lato', sans-serif;
+    font-size: 13pt;
+}
+
+main .species-list h3 {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 290px;
+    margin-bottom: 20px;
+    color: #733173;
+    font-family: 'Finger Paint', cursive;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+main .species-types {
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+main .species-image {
+    width: 400px;
+    height: auto;
+    
+}
+
+main .species-type-span{
+    color: #733173;
+    font-family: 'Finger Paint', cursive;
+    font-size: 15pt;
+    position: absolute;
 }
