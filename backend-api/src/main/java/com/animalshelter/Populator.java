@@ -14,7 +14,7 @@ public class Populator implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Species species1 = new Species("Cat", "","/images/species-images/kitten-flowers/jpg");
+        Species species1 = new Species("Cat", "","/images/kitten-flowers.jpg");
 
         speciesStorage.save(species1);
     }

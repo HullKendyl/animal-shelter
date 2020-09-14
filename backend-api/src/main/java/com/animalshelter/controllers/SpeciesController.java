@@ -1,8 +1,8 @@
 package com.animalshelter.controllers;
 
+import org.springframework.web.bind.annotation.*;
 import com.animalshelter.entities.Species;
 import com.animalshelter.storages.SpeciesStorage;
-import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
