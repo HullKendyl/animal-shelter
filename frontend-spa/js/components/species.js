@@ -1,4 +1,4 @@
-export const speciesGallery = (element, species) => {
+export const speciesGallery = (species) => {
     const speciesSection = document.createElement("section");
     const speciesHeader = document.createElement("div");
     speciesHeader.classList.add("species-list");
@@ -12,7 +12,7 @@ export const speciesGallery = (element, species) => {
     speciesSection.append(speciesHeader);
     for (let i = 0; i < species.length; i++) {
         const allSpeciesGallery = document.createElement("div");
-        allSpeciesGallery.classList.add("artist-div");
+        allSpeciesGallery.classList.add("species");
         allSpeciesGallery.innerHTML += `
             <img class = "species-image" src="${species[i].speciesImage}">
             <div class="species-span">
