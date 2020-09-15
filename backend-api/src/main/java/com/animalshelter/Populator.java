@@ -19,6 +19,9 @@ public class Populator implements CommandLineRunner {
         Species species3 = new Species("Rabbit", "", "/images/rabbit.jpg");
         Species species4 = new Species("Ferret", "", "/images/ferret.jpg");
         Species species5 = new Species("Guinea Pig", "", "/images/guinea-pig.jpg");
+        Species species6 = new Species("Hedgehog", "", "/images/hedgehog.jpg");
+        Species species7 = new Species("Hamster", "", "/images/hamster.jpg");
+        Species species8 = new Species("Bird", "", "/images/bird.jpg");
 
 
         speciesStorage.save(species1);
@@ -26,6 +29,9 @@ public class Populator implements CommandLineRunner {
         speciesStorage.save(species3);
         speciesStorage.save(species4);
         speciesStorage.save(species5);
+        speciesStorage.save(species6);
+        speciesStorage.save(species7);
+        speciesStorage.save(species8);
     }
 
 }
