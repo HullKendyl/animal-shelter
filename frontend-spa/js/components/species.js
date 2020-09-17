@@ -3,7 +3,7 @@ export const speciesGallery = (species) => {
     const speciesHeader = document.createElement("div");
     speciesHeader.classList.add("species-list");
     speciesHeader.innerHTML = `
-        <h3>Critter Species</h3>
+        <h3>Animals</h3>
         `;
 
     const allSpecies = document.createElement("div");
