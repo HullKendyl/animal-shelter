@@ -1,6 +1,6 @@
 export const welcome = () => {
-    const welcome = document.createElement("section");
-    welcome.classList.add("section");
+    const welcome = document.createElement("div");
+    welcome.classList.add("welcome-section");
     welcome.innerHTML = `
         <div class="video">
             <div class="color-block"></div>
