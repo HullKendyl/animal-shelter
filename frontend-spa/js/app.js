@@ -1,7 +1,6 @@
 import { clearElementChildren } from "./domHelper.js";
 import { navBarHeader } from "./components/header.js";
 import { welcome } from "./components/welcome.js";
-import { adoptionInfo } from "./components/adoption.js";
 import { speciesGallery } from "./components/species.js";
 import { fetchSpecies } from "./apiHelper.js";
 
@@ -12,7 +11,6 @@ export const renderPage = (species) => {
 
     container.prepend(navBarHeader());
     container.append(welcome());
-    // container.appendChild(adoptionInfo());
     container.appendChild(speciesGallery(species));
 
 };

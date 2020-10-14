@@ -71,7 +71,8 @@ nav .logo img {
     
 }
 
-.container .welcome h3 {
+.container .welcome h3, 
+.adoptionInfo h3 {
     width: 70%;
     margin-left: 15%;
     color: #733173;
@@ -80,7 +81,8 @@ nav .logo img {
     font-weight: bold;
 }
 
-.container .welcome p {
+.container .welcome p,
+.adoptionInfo p {
     width: 70%;
     margin-left: 15%;
     padding: 20px 0 20px 0;
@@ -92,7 +94,7 @@ nav .logo img {
 .container .species-list h3 {
     width: 70%;
     margin-left: 15%;
-    margin-top: 290px;
+    margin-top: 150px;
     margin-bottom: 20px;
     color: #733173;
     font-family: 'Finger Paint', cursive;
